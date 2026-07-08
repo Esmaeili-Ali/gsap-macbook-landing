@@ -10,7 +10,7 @@
   <h3 align="center">Apple Mabook Website</h3>
 
    <div align="center">
-     Built this project step by step with JavaScript Mastery to learn GSAP,THREEjs and boost up my react skills!
+     Built this project step by step with <a href="https://www.youtube.com/@javascriptmastery" target="_blank">JavaScript Mastery</a> to learn GSAP,THREEjs and boost up my react skills!
     </div>
 </div>
 
