@@ -16,7 +16,6 @@ const Showcase = () => {
           end: "bottom top",
           scrub: true,
           pin: true,
-          markers: true,
         },
       });
       timeLine
@@ -34,7 +33,7 @@ const Showcase = () => {
           <img src="/mask-logo.svg" />
         </div>
       </div>
-      <div className="content flex w-full justify-center">
+      <div className="content flex w-full justify-evenly">
         <div className="lg:max-w-md">
           <h2>Rocket Chip</h2>
           <div className="space-y-5 mt-7 pe-10">
@@ -50,15 +49,15 @@ const Showcase = () => {
               unbelievably thin, light, and powerful.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
-              odio ullam magnam maxime eos animi magni, fugit aperiam aut itaque
-              nulla eaque est consequatur a repellat esse inventore maiores.
-              Harum?
+              A brand-new display engine delivers breathtaking precision, color
+              accuracy, and brightness. And a next-gen GPU with
+              hardware-accelerated ray tracing brings console-level graphics to
+              your fingertips.
             </p>
-            <p className="text-primary">Learn more about Apple intel </p>
+            <p className="text-primary">Learn more about Apple intelligence </p>
           </div>
         </div>
-        <div className="max-w-3xs space-y-14">
+        <div className="max-w-3xs space-y-14 flex flex-col justify-evenly items-center ">
           <div className="space-y-2">
             <p>Up to</p>
             <h3>4x faster</h3>
