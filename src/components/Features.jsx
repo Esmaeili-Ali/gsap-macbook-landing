@@ -51,6 +51,21 @@ const ModelScroll = () => {
         ease: "power1.inOut",
       });
     }
+    timeLine
+      .call(() => setTexture("/videos/feature-1.mp4"))
+      .to(".box1", { opacity: 1, y: 0, delay: 1 });
+    timeLine
+      .call(() => setTexture("/videos/feature-2.mp4"))
+      .to(".box2", { opacity: 1, y: 0 });
+    timeLine
+      .call(() => setTexture("/videos/feature-3.mp4"))
+      .to(".box3", { opacity: 1, y: 0 });
+    timeLine
+      .call(() => setTexture("/videos/feature-4.mp4"))
+      .to(".box4", { opacity: 1, y: 0 });
+    timeLine
+      .call(() => setTexture("/videos/feature-5.mp4"))
+      .to(".box5", { opacity: 1, y: 0 });
   });
   return (
     <group ref={groupRef}>
@@ -81,7 +96,11 @@ const Features = () => {
             className={clsx(`box`, `box${index + 1}`, feature.styles)}
             key={index}
           >
-            {feature.text}
+            <img src={feature.icon} alt={feature.highlight} />
+            <p>
+              <span className="text-white">{feature.highlight}</span>
+              {feature.text}
+            </p>
           </div>
         ))}
       </div>
