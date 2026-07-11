@@ -72,7 +72,11 @@ const ModelScroll = () => {
       <Suspense
         fallback={
           <Html>
-            <h1 className="text-white text-3xl uppercase">Loading...</h1>
+            <div class="load-3 flex-row">
+              <div class="line" />
+              <div class="line" />
+              <div class="line" />
+            </div>
           </Html>
         }
       >
