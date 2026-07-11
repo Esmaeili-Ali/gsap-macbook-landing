@@ -72,10 +72,10 @@ const ModelScroll = () => {
       <Suspense
         fallback={
           <Html>
-            <div class="load-3 flex-row">
-              <div class="line" />
-              <div class="line" />
-              <div class="line" />
+            <div className="load-3 flex-row">
+              <div className="line" />
+              <div className="line" />
+              <div className="line" />
             </div>
           </Html>
         }
