@@ -72,7 +72,11 @@ const ModelScroll = () => {
       <Suspense
         fallback={
           <Html>
-            <h1 className="text-white text-3xl uppercase">Loading...</h1>
+            <div className="load-3 flex-row">
+              <div className="line" />
+              <div className="line" />
+              <div className="line" />
+            </div>
           </Html>
         }
       >
@@ -94,7 +98,7 @@ const Features = () => {
         {features.map((feature, index) => (
           <div
             className={clsx(`box`, `box${index + 1}`, feature.styles)}
-            key={index}
+            key={feature.id}
           >
             <img src={feature.icon} alt={feature.highlight} />
             <p>

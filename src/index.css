@@ -431,3 +431,46 @@ body {
     }
   }
 }
+
+//loading
+.loader {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.load-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.line {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.line:nth-child(1) {
+  animation: loadingC 0.6s 0.3s linear infinite;
+}
+
+.line:nth-child(2) {
+  animation: loadingC 0.6s 0.2s linear infinite;
+}
+
+.line:nth-child(3) {
+  animation: loadingC 0.6s 0.1s linear infinite;
+}
+
+@keyframes loadingC {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
