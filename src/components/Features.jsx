@@ -98,7 +98,7 @@ const Features = () => {
         {features.map((feature, index) => (
           <div
             className={clsx(`box`, `box${index + 1}`, feature.styles)}
-            key={index}
+            key={feature.id}
           >
             <img src={feature.icon} alt={feature.highlight} />
             <p>
